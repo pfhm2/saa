@@ -11,3 +11,197 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* bot primery parte */
+
+
+.container-main,.container-main-inicio{
+  height: 500px;
+  width: 80vw;
+  max-width: 1400px;
+
+  margin: 0 auto;
+  border: 1px green solid;
+  margin: 10px;
+  border-radius: 13px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opciones-contenedor{
+  border: 1px pink solid;
+  width: 95%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitulo,input{
+  margin: 0;
+}
+
+.opcion-comida{
+  margin: 0 10px 0 0;
+  border: 1px solid black;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .500s ease;
+}
+.opcion-comida:hover{
+
+}
+h3{
+  margin: 4px;
+}
+
+.otra-opcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid rgba(255, 0, 0, 0.151);
+  width: 95%;
+  padding: 5px;
+}
+
+.otra-input{
+  height: 30px;
+  border-radius: 12px;
+  border: 2px solid purple;
+  outline: none;
+}
+.empezar-div{
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.empezar-boton{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  padding:7.5px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(140, 93, 184, 0.986);
+  color:wheat;
+  cursor: pointer;
+  transition: all .250s ease;
+}
+
+.empezar-boton:hover,.opcion-comida:hover{
+  transform: scale(1.1);
+}
+
+
+/* chat */
+.chat-box{
+  border: 1px solid green;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  flex-direction: column-reverse;
+}
+
+.bot-pregunta{
+  background-color: whitesmoke;
+  width: 50%;
+}
+
+.chat{
+  border: 1px solid blue;
+  width: 95%;
+  height: 450px;
+}
+.chat-abajito{
+  border:3px solid tomato;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.chat-input{
+  height: 20px;
+  width: 60%;
+}
+
+.usuario-respuesta,.bot-respuesta{
+  border: 1px solid black;
+  padding: 0 5px 0 5px;
+  margin: 5px;
+}
+
+.usuario-respuesta{
+  align-self: flex-end;
+}
+
+.bot-respuesta{
+  align-self: flex-start;
+}
+
+.enviar-boton{
+  color: rgb(255, 255, 255);
+  background-color: rgb(154, 187, 224);
+  width: 50px;
+  padding: 3px;
+  cursor: pointer;
+
+}
+
+.enviar-block{
+  background-color: rgba(108, 109, 110, 0.281);
+  cursor:auto;
+}
+
+/* resultado */
+
+.contenedor-recetas{
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.card{
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.segunda-parte{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resultado_imagen{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
